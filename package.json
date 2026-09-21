@@ -1,0 +1,33 @@
+{
+  "name": "media-aggregator-reader",
+  "version": "1.0.0",
+  "description": "Media Aggregator & Reader - Client-side media center con supporto per sorgenti web personalizzate, parsing HTML e streaming HLS",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "media",
+    "aggregator",
+    "streaming",
+    "hls",
+    "tmdb",
+    "cheerio",
+    "proxy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "hls.js": "^1.7.3",
+    "http-proxy-middleware": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

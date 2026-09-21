@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - Media Aggregator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="player-page">
+    <div class="player-wrapper">
+        <header class="player-header">
+            <a href="/" class="back-btn">← Torna al Catalogo</a>
+            <h1 id="player-title">Video Player</h1>
+        </header>
+        
+        <main class="player-main">
+            <div class="video-container">
+                <video id="main-player" controls playsinline></video>
+            </div>
+            
+            <div class="player-controls">
+                <div class="stream-url-display">
+                    <label>URL Stream:</label>
+                    <input type="text" id="stream-url-input" readonly />
+                    <button id="copy-url-btn">Copia</button>
+                </div>
+                
+                <div class="quality-selector">
+                    <label>Qualità:</label>
+                    <select id="quality-select">
+                        <option value="auto">Automatico</option>
+                    </select>
+                </div>
+                
+                <div class="playback-controls">
+                    <button id="play-pause-btn">Play/Pause</button>
+                    <button id="fullscreen-btn">Fullscreen</button>
+                </div>
+            </div>
+            
+            <div class="stream-info-panel">
+                <h3>Informazioni Stream</h3>
+                <div id="stream-details">
+                    <!-- Dettagli dello stream -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="/js/player.js"></script>
+</body>
+</html>

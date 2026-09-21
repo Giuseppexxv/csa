@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "example-source-1",
+      "name": "Example Streaming Site",
+      "baseUrl": "https://example-streaming-site.com",
+      "enabled": true,
+      "rules": {
+        "search": {
+          "urlPattern": "/search?q={query}",
+          "method": "GET",
+          "resultsContainer": ".search-results .item",
+          "titleSelector": ".title",
+          "linkSelector": "a.href",
+          "thumbnailSelector": "img.src"
+        },
+        "content": {
+          "videoContainer": ".video-player",
+          "iframeSelector": "iframe[src]",
+          "directVideoSelector": "video source[src]",
+          "hlsManifestPattern": "\\.m3u8",
+          "mp4Pattern": "\\.mp4"
+        },
+        "headers": {
+          "Referer": "https://example-streaming-site.com",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+          "Origin": "https://example-streaming-site.com"
+        }
+      }
+    }
+  ]
+}
