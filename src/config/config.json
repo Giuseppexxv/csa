@@ -1,0 +1,11 @@
+{
+  "tmdb": {
+    "apiKey": "YOUR_TMDB_API_KEY",
+    "baseUrl": "https://api.themoviedb.org/3",
+    "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
+  },
+  "server": {
+    "port": 3000,
+    "proxyPort": 3001
+  }
+}
